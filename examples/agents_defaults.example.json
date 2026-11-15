@@ -1,0 +1,15 @@
+{
+  "_note": "Default model and thinking effort for Claude when dispatching agy/Codex. default_* may be updated by Claude via agent_defaults_set only after explicit user approval; allowed_* lists are edited manually by the user (empty list = unrestricted).",
+  "antigravity": {
+    "default_model": "",
+    "default_effort": "",
+    "allowed_models": [],
+    "allowed_efforts": []
+  },
+  "codex": {
+    "default_model": "",
+    "default_effort": "",
+    "allowed_models": [],
+    "allowed_efforts": []
+  }
+}

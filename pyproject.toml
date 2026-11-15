@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-deck"
+version = "0.5.0"
+description = "Local MCP dispatcher (agents-bridge) and terminal board (aw) for Claude, Codex CLI, and Antigravity CLI"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+    "textual==6.5.0",
+]
+
+[project.scripts]
+aw = "aw.__main__:main"
+agents-bridge = "agents_bridge.agents_mcp:main"
+
+[tool.setuptools.packages.find]
+include = ["agents_bridge*", "aw*"]
+
+[tool.setuptools.package-data]
+aw = ["pets_pixel.json"]
+
+[project.urls]
+Homepage = "https://github.com/xuzeliu80-ops/agent-deck"
+Issues = "https://github.com/xuzeliu80-ops/agent-deck/issues"

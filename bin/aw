@@ -1,0 +1,16 @@
+#!/bin/sh
+# Resolve the ~/.local/bin symlink without requiring GNU readlink -f on macOS.
+set -eu
+SCRIPT=$0
+while [ -L "$SCRIPT" ]; do
+    BASE=$(CDPATH= cd -- "$(dirname -- "$SCRIPT")" && pwd)
+    TARGET=$(readlink "$SCRIPT")
+    case "$TARGET" in /*) SCRIPT=$TARGET ;; *) SCRIPT=$BASE/$TARGET ;; esac
+done
+AW_HOME=$(CDPATH= cd -- "$(dirname -- "$SCRIPT")/.." && pwd)
+if [ ! -x "$AW_HOME/.venv/bin/python" ]; then
+    echo "请先运行 $AW_HOME/install.sh" >&2
+    exit 1
+fi
+export PYTHONPATH="$AW_HOME${PYTHONPATH:+:$PYTHONPATH}"
+exec "$AW_HOME/.venv/bin/python" -m aw "$@"

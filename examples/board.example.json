@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "updated": "2026-11-14T10:00",
+  "decisions": [
+    {
+      "id": "rate-limit-store",
+      "project": "api-gateway",
+      "title": "Choose rate-limit backend for burst traffic",
+      "context": "Local sliding-window tests pass; production cluster needs shared counters across replicas.",
+      "options": [
+        "Redis Lua script (recommended)",
+        "In-memory per-instance token bucket"
+      ],
+      "recommend": "Redis Lua script (recommended)",
+      "priority": "high",
+      "created": "2026-11-14T09:15",
+      "status": "open"
+    },
+    {
+      "id": "token-ttl",
+      "project": "auth-service",
+      "title": "Refresh token rotation grace window",
+      "context": "Mobile clients occasionally retry with the previous token during poor connectivity.",
+      "options": [
+        "15 seconds",
+        "60 seconds"
+      ],
+      "recommend": "15 seconds",
+      "priority": "normal",
+      "created": "2026-11-13",
+      "status": "open"
+    },
+    {
+      "id": "cli-format",
+      "project": "cli-dashboard",
+      "title": "Adopt Textual SGR mouse reporting",
+      "context": "Enable right-click context menus in Terminal.app and iTerm2.",
+      "options": [
+        "Enable SGR mouse mode",
+        "Keyboard only"
+      ],
+      "recommend": "Enable SGR mouse mode",
+      "priority": "low",
+      "created": "2026-11-12",
+      "status": "decided",
+      "choice": "Enable SGR mouse mode",
+      "note": "Verified in Terminal.app",
+      "decided_at": "2026-11-12T18:00:00+00:00",
+      "decided_by": "user@aw",
+      "seen_by_claude": true
+    }
+  ],
+  "progress": [
+    {
+      "project": "api-gateway",
+      "status": "waiting_user",
+      "stage": "Load benchmarks finished",
+      "next": "Pick rate-limit backend and deploy staging",
+      "updated": "2026-11-14T09:45",
+      "updated_by": "claude"
+    },
+    {
+      "project": "auth-service",
+      "status": "running",
+      "stage": "Adding PKCE integration tests",
+      "next": "Run full regression suite",
+      "updated": "2026-11-14T09:50",
+      "updated_by": "claude"
+    },
+    {
+      "project": "cli-dashboard",
+      "status": "done",
+      "stage": "Packaging and docs ready",
+      "next": "Tag initial release",
+      "updated": "2026-11-13",
+      "updated_by": "claude"
+    }
+  ],
+  "archived": []
+}

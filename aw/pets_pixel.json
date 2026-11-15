@@ -1,0 +1,377 @@
+{
+ "note": "原创像素宠物，Claude 设计。每帧 14×12 像素，'.' 透明；终端用半格 ▀ 每格画上下 2 像素 → 14 列 × 6 行。规则：①每行左右镜像对称；②眼睛、鼻子、嘴等五官占满同一格的上下两像素（行 2k 与 2k+1 一致），因为终端里 ▀ 的分界线不一定落在格子正中，上下不同色的格子会显得错位。",
+ "palette": {
+  "O": "#E07B4F",
+  "D": "#A9502F",
+  "W": "#FBEBDD",
+  "K": "#2B1D18",
+  "N": "#3A2620",
+  "G": "#3FBF8A",
+  "g": "#24865F",
+  "w": "#EAFBF3",
+  "k": "#10231B",
+  "b": "#F29E4C",
+  "B": "#7C83F2",
+  "S": "#FFE37A",
+  "m": "#1C1C3A",
+  "p": "#F49AC1",
+  "r": "#F28C9A"
+ },
+ "names": {
+  "claude": "fox",
+  "codex": "owl",
+  "antigravity": "cat"
+ },
+ "frames": {
+  "fox": {
+   "busy": [
+    [
+     "..O........O..",
+     ".OOO......OOO.",
+     ".ODDO....ODDO.",
+     ".OOOOOOOOOOOO.",
+     "OOOKKOOOOKKOOO",
+     "OOOKKOOOOKKOOO",
+     "OWWOOOOOOOOWWO",
+     "OWWWWOOOOWWWWO",
+     ".WWWWWNNWWWWW.",
+     "..WWWWNNWWWW..",
+     "...WWWWWWWW...",
+     ".....WWWW....."
+    ],
+    [
+     "..O........O..",
+     ".OOO......OOO.",
+     ".ODDO....ODDO.",
+     ".OOOOOOOOOOOO.",
+     "OOOKKOOOOKKOOO",
+     "OOOKKOOOOKKOOO",
+     "OWWOOOOOOOOWWO",
+     "OWWWWOOOOWWWWO",
+     ".WWWWWNNWWWWW.",
+     "..WWWWNNWWWW..",
+     "...WWWWWWWW...",
+     ".....WWWW....."
+    ],
+    [
+     "..O........O..",
+     ".OOO......OOO.",
+     ".ODDO....ODDO.",
+     ".OOOOOOOOOOOO.",
+     "OOOKKOOOOKKOOO",
+     "OOOKKOOOOKKOOO",
+     "OWWOOOOOOOOWWO",
+     "OWWWWOOOOWWWWO",
+     ".WWWWWNNWWWWW.",
+     "..WWWWNNWWWW..",
+     "...WWWWWWWW...",
+     ".....WWWW....."
+    ],
+    [
+     "..O........O..",
+     ".OOO......OOO.",
+     ".ODDO....ODDO.",
+     ".OOOOOOOOOOOO.",
+     "OOOOOOOOOOOOOO",
+     "OOOKKOOOOKKOOO",
+     "OWWOOOOOOOOWWO",
+     "OWWWWOOOOWWWWO",
+     ".WWWWWNNWWWWW.",
+     "..WWWWNNWWWW..",
+     "...WWWWWWWW...",
+     ".....WWWW....."
+    ]
+   ],
+   "idle": [
+    [
+     "..O........O..",
+     ".OOO......OOO.",
+     ".ODDO....ODDO.",
+     ".OOOOOOOOOOOO.",
+     "OOOKKOOOOKKOOO",
+     "OOOKKOOOOKKOOO",
+     "OWWOOOOOOOOWWO",
+     "OWWWWOOOOWWWWO",
+     ".WWWWWNNWWWWW.",
+     "..WWWWNNWWWW..",
+     "...WWWWWWWW...",
+     ".....WWWW....."
+    ]
+   ],
+   "happy": [
+    [
+     "..O........O..",
+     ".OOO......OOO.",
+     ".ODDO....ODDO.",
+     ".OOOOOOOOOOOO.",
+     "OOOKKOOOOKKOOO",
+     "OOOKKOOOOKKOOO",
+     "OrWOOOOOOOOWrO",
+     "OrWWWOOOOWWWrO",
+     ".WWWWWNNWWWWW.",
+     "..WWWWNNWWWW..",
+     "...WWWWWWWW...",
+     ".....WWWW....."
+    ]
+   ],
+   "error": [
+    [
+     "..O........O..",
+     ".OOO......OOO.",
+     ".ODDO....ODDO.",
+     ".OOOOOOOOOOOO.",
+     "OOOWKOOOOKWOOO",
+     "OOOKKOOOOKKOOO",
+     "OWWOOOOOOOOWWO",
+     "OWWWWOOOOWWWWO",
+     ".WWWWWNNWWWWW.",
+     "..WWWWNNWWWW..",
+     "...WWWWWWWW...",
+     ".....WWWW....."
+    ]
+   ]
+  },
+  "owl": {
+   "busy": [
+    [
+     ".g..........g.",
+     ".gg........gg.",
+     "..GGGGGGGGGG..",
+     ".GGGGGGGGGGGG.",
+     "GGwkkwGGwkkwGG",
+     "GwwkkwwwwkkwwG",
+     "GwwwwwbbwwwwwG",
+     "GGwwwwbbwwwwGG",
+     ".GGGGGGGGGGGG.",
+     ".GgGGgGGgGGgG.",
+     ".GgGGgGGgGGgG.",
+     "...GGGGGGGG..."
+    ],
+    [
+     ".g..........g.",
+     ".gg........gg.",
+     "..GGGGGGGGGG..",
+     ".GGGGGGGGGGGG.",
+     "GGwkkwGGwkkwGG",
+     "GwwkkwwwwkkwwG",
+     "GwwwwwbbwwwwwG",
+     "GGwwwwbbwwwwGG",
+     ".GGGGGGGGGGGG.",
+     ".GgGGgGGgGGgG.",
+     ".GgGGgGGgGGgG.",
+     "...GGGGGGGG..."
+    ],
+    [
+     ".g..........g.",
+     ".gg........gg.",
+     "..GGGGGGGGGG..",
+     ".GGGGGGGGGGGG.",
+     "GGwkkwGGwkkwGG",
+     "GwwkkwwwwkkwwG",
+     "GwwwwwbbwwwwwG",
+     "GGwwwwbbwwwwGG",
+     ".GGGGGGGGGGGG.",
+     ".GgGGgGGgGGgG.",
+     ".GgGGgGGgGGgG.",
+     "...GGGGGGGG..."
+    ],
+    [
+     ".g..........g.",
+     ".gg........gg.",
+     "..GGGGGGGGGG..",
+     ".GGGGGGGGGGGG.",
+     "GGwwwwGGwwwwGG",
+     "GwwkkwwwwkkwwG",
+     "GwwwwwbbwwwwwG",
+     "GGwwwwbbwwwwGG",
+     ".GGGGGGGGGGGG.",
+     ".GgGGgGGgGGgG.",
+     ".GgGGgGGgGGgG.",
+     "...GGGGGGGG..."
+    ]
+   ],
+   "idle": [
+    [
+     ".g..........g.",
+     ".gg........gg.",
+     "..GGGGGGGGGG..",
+     ".GGGGGGGGGGGG.",
+     "GGwkkwGGwkkwGG",
+     "GwwkkwwwwkkwwG",
+     "GwwwwwbbwwwwwG",
+     "GGwwwwbbwwwwGG",
+     ".GGGGGGGGGGGG.",
+     ".GgGGgGGgGGgG.",
+     ".GgGGgGGgGGgG.",
+     "...GGGGGGGG..."
+    ]
+   ],
+   "happy": [
+    [
+     ".g..........g.",
+     ".gg........gg.",
+     "..GGGGGGGGGG..",
+     ".GGGGGGGGGGGG.",
+     "GGwkkwGGwkkwGG",
+     "GwwkkwwwwkkwwG",
+     "GwrwwwbbwwwrwG",
+     "GGrwwwbbwwwrGG",
+     ".GGGGGGGGGGGG.",
+     ".GgGGgGGgGGgG.",
+     ".GgGGgGGgGGgG.",
+     "...GGGGGGGG..."
+    ]
+   ],
+   "error": [
+    [
+     ".g..........g.",
+     ".gg........gg.",
+     "..GGGGGGGGGG..",
+     ".GGGGGGGGGGGG.",
+     "GGwkwwGGwwkwGG",
+     "GwwkkwwwwkkwwG",
+     "GwwwwwbbwwwwwG",
+     "GGwwwwbbwwwwGG",
+     ".GGGGGGGGGGGG.",
+     ".GgGGgGGgGGgG.",
+     ".GgGGgGGgGGgG.",
+     "...GGGGGGGG..."
+    ]
+   ]
+  },
+  "cat": {
+   "busy": [
+    [
+     ".B..........B.",
+     ".BB........BB.",
+     ".BpB......BpB.",
+     ".BBBBBSSBBBBB.",
+     "BBBBBSSSSBBBBB",
+     "BBBBBBSSBBBBBB",
+     "BBmmBBBBBBmmBB",
+     "BBmmBBBBBBmmBB",
+     "BBBBBBppBBBBBB",
+     "BBBBBBppBBBBBB",
+     ".BBBBmBBmBBBB.",
+     "..BBBBmmBBBB.."
+    ],
+    [
+     ".B..........B.",
+     ".BB........BB.",
+     ".BpB......BpB.",
+     ".BBBBBSSBBBBB.",
+     "BBBBBSSSSBBBBB",
+     "BBBBBBSSBBBBBB",
+     "BBmmBBBBBBmmBB",
+     "BBmmBBBBBBmmBB",
+     "BBBBBBppBBBBBB",
+     "BBBBBBppBBBBBB",
+     ".BBBBmBBmBBBB.",
+     "..BBBBmmBBBB.."
+    ],
+    [
+     ".B..........B.",
+     ".BB........BB.",
+     ".BpB......BpB.",
+     ".BBBBBSSBBBBB.",
+     "BBBBBSSSSBBBBB",
+     "BBBBBBSSBBBBBB",
+     "BBmmBBBBBBmmBB",
+     "BBmmBBBBBBmmBB",
+     "BBBBBBppBBBBBB",
+     "BBBBBBppBBBBBB",
+     ".BBBBmBBmBBBB.",
+     "..BBBBmmBBBB.."
+    ],
+    [
+     ".B..........B.",
+     ".BB........BB.",
+     ".BpB......BpB.",
+     ".BBBBBSSBBBBB.",
+     "BBBBBSSSSBBBBB",
+     "BBBBBBSSBBBBBB",
+     "BBBBBBBBBBBBBB",
+     "BBmmBBBBBBmmBB",
+     "BBBBBBppBBBBBB",
+     "BBBBBBppBBBBBB",
+     ".BBBBmBBmBBBB.",
+     "..BBBBmmBBBB.."
+    ]
+   ],
+   "idle": [
+    [
+     ".B..........B.",
+     ".BB........BB.",
+     ".BpB......BpB.",
+     ".BBBBBSSBBBBB.",
+     "BBBBBSSSSBBBBB",
+     "BBBBBBSSBBBBBB",
+     "BBmmBBBBBBmmBB",
+     "BBmmBBBBBBmmBB",
+     "BBBBBBppBBBBBB",
+     "BBBBBBppBBBBBB",
+     ".BBBBmBBmBBBB.",
+     "..BBBBmmBBBB.."
+    ]
+   ],
+   "happy": [
+    [
+     ".B..........B.",
+     ".BB........BB.",
+     ".BpB......BpB.",
+     ".BBBBBSSBBBBB.",
+     "BBBBBSSSSBBBBB",
+     "BBBBBBSSBBBBBB",
+     "BrmmBBBBBBmmrB",
+     "BrmmBBBBBBmmrB",
+     "BBBBBBppBBBBBB",
+     "BBBBBBppBBBBBB",
+     ".BBBBmBBmBBBB.",
+     "..BBBBmmBBBB.."
+    ]
+   ],
+   "error": [
+    [
+     ".B..........B.",
+     ".BB........BB.",
+     ".BpB......BpB.",
+     ".BBBBBSSBBBBB.",
+     "BBBBBSSSSBBBBB",
+     "BBBBBBSSBBBBBB",
+     "BBSmBBBBBBmSBB",
+     "BBmmBBBBBBmmBB",
+     "BBBBBBppBBBBBB",
+     "BBBBBBppBBBBBB",
+     ".BBBBmBBmBBBB.",
+     "..BBBBmmBBBB.."
+    ]
+   ]
+  }
+ },
+ "badges": {
+  "busy": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "idle": [
+   "z",
+   "zZ"
+  ],
+  "happy": [
+   "♪",
+   "♫"
+  ],
+  "error": [
+   "!",
+   "!!"
+  ]
+ },
+ "badge_colors": {
+  "idle": "#9AA4B2",
+  "happy": "#F2C14E",
+  "error": "#FF5C5C"
+ },
+ "frame_seconds": 0.8
+}
